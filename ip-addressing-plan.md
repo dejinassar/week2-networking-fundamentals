@@ -2,7 +2,7 @@
 
 ## Overview
 
-This network uses the private address range `10.0.0.0/16` as its overall address space, broken into three `/24` subnets. Private ranges (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) are reserved by RFC 1918 for internal use and aren't routable on the public internet — which is exactly why they're appropriate here for everything except the one component that genuinely needs a public IP (the load balancer).
+This network uses the private address range `10.0.0.0/16` as its overall address space, broken into three `/24` subnets. Private ranges (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) are reserved by RFC 1918 for internal use and aren't routable on the public internet —which is exactly why they're appropriate here for everything except the one component that genuinely needs a public IP (the load balancer).
 
 ## Why three separate /24 subnets instead of one big network
 
