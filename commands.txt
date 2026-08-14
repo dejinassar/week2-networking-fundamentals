@@ -1,0 +1,60 @@
+Week 2 — Networking Commands
+=============================
+Commands I actually ran on my machine while learning networking fundamentals,
+plus a couple marked "optional practice" that I read about but haven't run yet.
+
+--- Checking my own network configuration ---
+
+ip addr
+    Shows the IP addresses assigned to each network interface on my machine.
+
+ip route
+    Shows my machine's routing table — where traffic goes for different
+    destination networks, and what the default gateway is.
+
+--- Testing connectivity ---
+
+ping google.com
+    Sends ICMP echo requests to check if a host is reachable and to get
+    a rough idea of latency.
+
+ping 8.8.8.8
+    Same as above, but straight to an IP address instead of a domain —
+    useful for checking if the problem is connectivity or DNS.
+
+--- DNS ---
+
+nslookup google.com
+    Looks up the IP address(es) a domain name resolves to. This is what
+    made DNS resolution feel concrete instead of theoretical.
+
+--- HTTP/HTTPS ---
+
+curl https://example.com
+    Sends an HTTP request from the command line and shows the response.
+    Used this to see the request/response cycle directly instead of just
+    reading about it.
+
+curl -I https://example.com
+    Same as above, but only shows the response headers — useful for
+    checking status codes without downloading the whole page.
+
+--- Firewall (local machine) ---
+
+sudo ufw status
+    Checked the status of the firewall on my own Linux machine (from
+    Week 1's setup) to see which ports were open/closed.
+
+--- Optional practice (read about these, haven't run them yet) ---
+
+traceroute google.com   (optional practice)
+    Would show the path (hop by hop) traffic takes to reach a destination.
+    Didn't have traceroute installed / didn't get to this yet.
+
+dig google.com   (optional practice)
+    A more detailed DNS lookup tool than nslookup. Want to try this next
+    to compare the output against nslookup.
+
+netstat -tulnp   (optional practice)
+    Would show which ports are actively listening on my machine.
+    Planning to try this once I set up a local server to test against.
