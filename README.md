@@ -24,7 +24,7 @@ The diagram shows the full path from a user on the internet down to the database
 
 **Firewall:** Sits right after the edge router and only allows traffic on ports 80 (HTTP) and 443 (HTTPS) through to the load balancer. Everything else is blocked by default.
 
-**NAT (Network Address Translation):** This is easy to get backwards, so I want to be explicit about it. NAT in this design is **outbound only** — it lets the private app and database servers reach the internet (for things like software updates) even though they don't have public IP addresses. NAT is not what lets a user's request *in*. Inbound requests reach the load balancer directly because the load balancer is the one component in the private layers that's assigned a public IP.
+**NAT (Network Address Translation):** This is easy to get backwards, so I want to be explicit about it. NAT in this design is **outbound only** it lets the private app and database servers reach the internet (for things like software updates) even though they don't have public IP addresses. NAT is not what lets a user's request *in*. Inbound requests reach the load balancer directly because the load balancer is the one component in the private layers that's assigned a public IP.
 
 **Load balancer:** Receives all incoming requests on the public IP and distributes them across the two app servers.
 
