@@ -10,7 +10,7 @@ and load balancing this week.
   - 10.0.0.0 – 10.255.255.255
   - 172.16.0.0 – 172.31.255.255
   - 192.168.0.0 – 192.168.255.255
-- Public IPs are the ones actually routable on the internet — assigned by an
+- Public IPs are the ones actually routable on the internet assigned by an
   ISP or cloud provider.
 - A device with only a private IP can't be reached directly from the internet.
   That's a feature, not a bug — it's why I put the app servers and database
@@ -90,6 +90,6 @@ network and it's easy to lump them together when you're new to this.
 - What actually happens during a TLS handshake (I know HTTPS uses it, don't
   fully understand the steps yet).
 - The difference between Layer 4 (transport) and Layer 7 (application) load
-  balancing — I think my load balancer here is more of a Layer 7 concept
+  balancing I think my load balancer here is more of a Layer 7 concept
   since it's routing based on HTTP, but I want to confirm that.
 - Actually setting up `ufw` rules instead of just checking status with it.
