@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is my Week 2 assignment for the Cloud Engineer by Audacity community. The scenario is simple: a startup has built an app and wants to understand how that app becomes reachable by users anywhere on the internet — and what network components sit between a user typing a URL and the app actually responding.
+This project is my Week 2 assignment for the Cloud Engineer by Audacity community. The scenario is simple: a startup has built an app and wants to understand how that app becomes reachable by users anywhere on the internet and what network components sit between a user typing a URL and the app actually responding.
 
 Instead of just drawing a diagram, I designed an IP addressing plan, worked out how a request travels through each layer, and explained the reasoning behind every decision. This builds directly on Week 1, where I worked with Linux fundamentals, users/sudo, and SSH — this week moves from "inside a single machine" to "how machines talk to each other over a network."
 
