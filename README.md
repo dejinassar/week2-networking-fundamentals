@@ -16,7 +16,7 @@ The diagram shows the full path from a user on the internet down to the database
 
 **Public subnet (10.0.1.0/24):** This is the only part of the network that is reachable from the internet. It holds the edge router, the firewall, the load balancer, and a NAT gateway.
 
-**Private app subnet (10.0.2.0/24):** Two application servers live here. They have no public IP addresses — they can only be reached through the load balancer.
+**Private app subnet (10.0.2.0/24):** Two application servers live here. They have no public IP addresses they can only be reached through the load balancer.
 
 **Private database subnet (10.0.3.0/24):** The database sits in its own subnet, separate from the app servers. Only the app servers can talk to it. Nothing about it is reachable from the internet.
 
