@@ -6,7 +6,7 @@ This network uses the private address range `10.0.0.0/16` as its overall address
 
 ## Why three separate /24 subnets instead of one big network
 
-Splitting the network into public, app, and database subnets isn't just for tidiness — it means routing and firewall rules can be applied per-subnet. For example, "the database subnet has no route to the internet" is a property of the network design itself, not just a rule someone has to remember to configure on each device individually.
+Splitting the network into public, app, and database subnets isn't just for tidiness it means routing and firewall rules can be applied per-subnet. For example, "the database subnet has no route to the internet" is a property of the network design itself, not just a rule someone has to remember to configure on each device individually.
 
 ## Subnet Breakdown
 
